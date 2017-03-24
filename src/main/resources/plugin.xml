@@ -3,7 +3,7 @@
 <go-plugin id="config.transformation.plugin" version="1">
     <about>
         <name>Config Transformation Task Plugin</name>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <target-go-version>15.1.0</target-go-version>
         <description>Plugin to transform configuration file</description>
         <vendor>

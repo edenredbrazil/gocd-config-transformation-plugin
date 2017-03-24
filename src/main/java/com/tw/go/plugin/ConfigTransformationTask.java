@@ -77,8 +77,8 @@ public class ConfigTransformationTask {
     }
 
     private void writeFile(String content, String path) throws IOException {
-        FileOutputStream outputStream = new FileOutputStream(path);
-        outputStream.write(content.getBytes());
-        outputStream.close();
+        OutputStreamWriter bufferOut = new OutputStreamWriter(new FileOutputStream(path),"UTF-8");
+        bufferOut.write(content);
+        bufferOut.close();
     }
 }
